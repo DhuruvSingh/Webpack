@@ -12,6 +12,12 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  optimization: {
+    runtimeChunk: 'single',
+  },
+  devServer: {
+    static: './dist',
+  },
   module: {
     rules: [
       {
